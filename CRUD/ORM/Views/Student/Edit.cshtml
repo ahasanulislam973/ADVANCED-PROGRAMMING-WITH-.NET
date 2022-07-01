@@ -1,0 +1,18 @@
+﻿@model ORM.Models.Student
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+<from action="/Student/Edit" method="post">
+    <input type="text" class="form-control" name="Name" placeholder="Name" />
+    <input type="hidden" name="id" value="@Model.Id" />
+    Dob: <input type="date" name="Dob" class="form-control" />
+    Cgpa: <input type="text" name="Cgpa" class="form-control" />
+    Gender: <input type="radio" name="Gender" value="Male" />Male
+    <input type="radio" name="Gender" value="Female" />Female
+    <input type="submit" value="Edit" class="btn btn-info" />
+    @Html.ActionLink("Back to List", "Index")
+</from>
+

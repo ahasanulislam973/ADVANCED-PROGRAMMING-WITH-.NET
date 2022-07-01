@@ -1,0 +1,38 @@
+﻿@model IEnumerable<ORM.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<a href="/Student/create" class="btn btn-primary">Add Student</a>
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Dob</th>
+        <th>Gender</th>
+        <th>Cgpa</th>
+
+    </tr>
+
+    @foreach (var s in Model)
+    {
+        <tr>
+            <td>@s.Id</td>
+            <td>@s.Name</td>
+            <td>@s.Dob</td>
+            <td>@s.Gender</td>
+            <td>@s.Cgpa</td>
+            <td>
+                <a href="/Student/Edit/@s.Id" class="btn btn-info">Edit</a>
+                <a href="/Student/Details/@s.Id" class="btn btn-success">Details</a>
+                <a href="/Student/Delete/@s.Id" class="btn btn-danger">Delete</a>
+            </td>
+
+            
+
+        </tr>
+    }
+</table>
