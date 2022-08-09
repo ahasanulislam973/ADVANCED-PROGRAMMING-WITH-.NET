@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BookList_Table">
+          <Key>
+            <PropertyRef Name="BookId" />
+          </Key>
+          <Property Name="BookId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BookName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="AuthorName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Edition" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Librarian_table">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Dob" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Gender" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="JoiningDate" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="BloodGroup" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Address" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Occasion_Table">
+          <Key>
+            <PropertyRef Name="OC_Id" />
+          </Key>
+          <Property Name="OC_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OC_Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="OC_Description" Type="varchar" MaxLength="1000" Nullable="false" />
+          <Property Name="OC_Date" Type="date" Nullable="false" />
+          <Property Name="OC_Time" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="BookList_Table" EntityType="Self.BookList_Table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Librarian_table" EntityType="Self.Librarian_table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Occasion_Table" EntityType="Self.Occasion_Table" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="BookList_Table">
+          <Key>
+            <PropertyRef Name="BookId" />
+          </Key>
+          <Property Name="BookId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BookName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AuthorName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Edition" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Librarian_table">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Dob" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="JoiningDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BloodGroup" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Occasion_Table">
+          <Key>
+            <PropertyRef Name="OC_Id" />
+          </Key>
+          <Property Name="OC_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OC_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OC_Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OC_Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="OC_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Library_ManagementEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BookList_Table" EntityType="Self.BookList_Table" />
+          <EntitySet Name="Librarian_table" EntityType="Self.Librarian_table" />
+          <EntitySet Name="Occasion_Table" EntityType="Self.Occasion_Table" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Library_ManagementEntities">
+          <EntitySetMapping Name="BookList_Table">
+            <EntityTypeMapping TypeName="Model.BookList_Table">
+              <MappingFragment StoreEntitySet="BookList_Table">
+                <ScalarProperty Name="BookId" ColumnName="BookId" />
+                <ScalarProperty Name="BookName" ColumnName="BookName" />
+                <ScalarProperty Name="AuthorName" ColumnName="AuthorName" />
+                <ScalarProperty Name="Edition" ColumnName="Edition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Librarian_table">
+            <EntityTypeMapping TypeName="Model.Librarian_table">
+              <MappingFragment StoreEntitySet="Librarian_table">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Dob" ColumnName="Dob" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="JoiningDate" ColumnName="JoiningDate" />
+                <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Occasion_Table">
+            <EntityTypeMapping TypeName="Model.Occasion_Table">
+              <MappingFragment StoreEntitySet="Occasion_Table">
+                <ScalarProperty Name="OC_Id" ColumnName="OC_Id" />
+                <ScalarProperty Name="OC_Name" ColumnName="OC_Name" />
+                <ScalarProperty Name="OC_Description" ColumnName="OC_Description" />
+                <ScalarProperty Name="OC_Date" ColumnName="OC_Date" />
+                <ScalarProperty Name="OC_Time" ColumnName="OC_Time" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
