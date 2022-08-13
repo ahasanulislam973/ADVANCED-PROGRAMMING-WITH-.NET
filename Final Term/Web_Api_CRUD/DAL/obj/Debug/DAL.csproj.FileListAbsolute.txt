@@ -1,0 +1,38 @@
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\DAL\bin\Debug\DAL.dll.config
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\DAL\bin\Debug\DAL.dll
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\DAL\bin\Debug\DAL.pdb
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\DAL\bin\Debug\EntityFramework.dll
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\DAL\bin\Debug\EntityFramework.xml
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\DAL\obj\Debug\DAL.csproj.CopyComplete
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\DAL\obj\Debug\DAL.dll
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\DAL\obj\Debug\DAL.pdb
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\DAL\bin\Debug\DAL.dll.config
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\DAL\bin\Debug\DAL.dll
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\DAL\bin\Debug\DAL.pdb
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\DAL\obj\Debug\DAL.dll
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\DAL\obj\Debug\DAL.pdb
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\DAL\bin\Debug\DAL.dll.config
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\DAL\bin\Debug\DAL.dll
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\DAL\bin\Debug\DAL.pdb
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\DAL\obj\Debug\DAL.dll
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\DAL\obj\Debug\DAL.pdb
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\DAL\bin\Debug\DAL.dll.config
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\DAL\bin\Debug\DAL.dll
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\DAL\bin\Debug\DAL.pdb
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\DAL\obj\Debug\DAL.dll
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\DAL\obj\Debug\DAL.pdb

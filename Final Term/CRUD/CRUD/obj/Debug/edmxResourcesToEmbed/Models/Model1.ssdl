@@ -28,7 +28,7 @@
     <Property Name="OC_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="OC_Name" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="OC_Description" Type="varchar" MaxLength="1000" Nullable="false" />
-    <Property Name="OC_Date" Type="date" Nullable="false" />
+    <Property Name="OC_Date" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="OC_Time" Type="varchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityContainer Name="ModelStoreContainer">

@@ -17,7 +17,7 @@ namespace CRUD.Models
         public int OC_Id { get; set; }
         public string OC_Name { get; set; }
         public string OC_Description { get; set; }
-        public System.DateTime OC_Date { get; set; }
+        public string OC_Date { get; set; }
         public string OC_Time { get; set; }
     }
 }

@@ -28,7 +28,7 @@
     <Property Name="OC_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="OC_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="OC_Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="OC_Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="OC_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="OC_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
   </EntityType>
   <EntityContainer Name="Library_ManagementEntities" annotation:LazyLoadingEnabled="true">

@@ -1,0 +1,56 @@
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\BLL\bin\Debug\BLL.dll
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\BLL\bin\Debug\BLL.pdb
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\BLL\bin\Debug\AutoMapper.dll
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\BLL\bin\Debug\DAL.dll
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\BLL\bin\Debug\EntityFramework.dll
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\BLL\bin\Debug\DAL.pdb
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\BLL\bin\Debug\DAL.dll.config
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\BLL\bin\Debug\AutoMapper.xml
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\BLL\bin\Debug\EntityFramework.xml
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\BLL\obj\Debug\BLL.csproj.CopyComplete
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\BLL\obj\Debug\BLL.dll
+G:\Semester 11 summer  2022\advance .net\adv.net_sum22_B-master\Api_Project\BLL\obj\Debug\BLL.pdb
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\BLL\bin\Debug\BLL.dll
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\BLL\bin\Debug\BLL.pdb
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\BLL\bin\Debug\AutoMapper.dll
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\BLL\bin\Debug\DAL.dll
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\BLL\bin\Debug\DAL.pdb
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\BLL\bin\Debug\DAL.dll.config
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\BLL\bin\Debug\AutoMapper.xml
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\BLL\obj\Debug\BLL.dll
+C:\Users\Star\OneDrive\Desktop\New folder\Api_Project\BLL\obj\Debug\BLL.pdb
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\BLL\bin\Debug\BLL.dll
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\BLL\bin\Debug\BLL.pdb
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\BLL\bin\Debug\AutoMapper.dll
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\BLL\bin\Debug\DAL.dll
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\BLL\bin\Debug\DAL.pdb
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\BLL\bin\Debug\DAL.dll.config
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\BLL\bin\Debug\AutoMapper.xml
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\BLL\obj\Debug\BLL.dll
+C:\Users\Star\OneDrive\Desktop\Advance.net\Web Api CRUD\Api_Project\BLL\obj\Debug\BLL.pdb
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\BLL\bin\Debug\BLL.dll
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\BLL\bin\Debug\BLL.pdb
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\BLL\bin\Debug\AutoMapper.dll
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\BLL\bin\Debug\DAL.dll
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\BLL\bin\Debug\DAL.pdb
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\BLL\bin\Debug\DAL.dll.config
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\BLL\bin\Debug\AutoMapper.xml
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\BLL\obj\Debug\BLL.dll
+C:\Users\Star\OneDrive\Desktop\Eiman\Api_Project\BLL\obj\Debug\BLL.pdb

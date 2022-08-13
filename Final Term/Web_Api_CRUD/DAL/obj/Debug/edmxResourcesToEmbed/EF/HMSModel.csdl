@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HMS_APIModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CalGro">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Price" Type="Int32" Nullable="false" />
+    <Property Name="Product" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HomeNotice">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Notice" Type="String" MaxLength="350" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="In_Out_Notes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateAndTime" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Member_id" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Member" Relationship="Self.FK_In_Out_Notes_Members" FromRole="In_Out_Notes" ToRole="Members" />
+  </EntityType>
+  <EntityType Name="MealInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Member_Id" Type="Int32" Nullable="false" />
+    <Property Name="Lunch" Type="Int32" Nullable="false" />
+    <Property Name="Dinner" Type="Int32" Nullable="false" />
+    <Property Name="Breakfast" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Member" Relationship="Self.FK_MealInfos_Members" FromRole="MealInfos" ToRole="Members" />
+  </EntityType>
+  <EntityType Name="Member_Complains">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Member_Id" Type="Int32" Nullable="false" />
+    <Property Name="Complain" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Member" Relationship="Self.FK_Member_Complains_Members" FromRole="Member_Complains" ToRole="Members" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Age" Type="Int32" Nullable="false" />
+    <Property Name="Gname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Room_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="In_Out_Notes" Relationship="Self.FK_In_Out_Notes_Members" FromRole="Members" ToRole="In_Out_Notes" />
+    <NavigationProperty Name="MealInfos" Relationship="Self.FK_MealInfos_Members" FromRole="Members" ToRole="MealInfos" />
+    <NavigationProperty Name="Member_Complains" Relationship="Self.FK_Member_Complains_Members" FromRole="Members" ToRole="Member_Complains" />
+    <NavigationProperty Name="RoomDetail" Relationship="Self.FK_Members_RoomDetails" FromRole="Members" ToRole="RoomDetails" />
+    <NavigationProperty Name="Request_Services" Relationship="Self.FK_Request_Services_Members" FromRole="Members" ToRole="Request_Services" />
+  </EntityType>
+  <EntityType Name="Request_Services">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Member_Id" Type="Int32" Nullable="false" />
+    <Property Name="Service" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Member" Relationship="Self.FK_Request_Services_Members" FromRole="Request_Services" ToRole="Members" />
+  </EntityType>
+  <EntityType Name="RoomDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoomNo" Type="Int32" Nullable="false" />
+    <Property Name="Capacity" Type="Int32" Nullable="false" />
+    <Property Name="AssignedMember" Type="Int32" Nullable="false" />
+    <Property Name="SeatAvailable" Type="Int32" Nullable="false" />
+    <Property Name="RoomSpec" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Members" Relationship="Self.FK_Members_RoomDetails" FromRole="RoomDetails" ToRole="Members" />
+  </EntityType>
+  <EntityType Name="Staff_Salaries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Staff_Id" Type="Int32" Nullable="false" />
+    <Property Name="Salary" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Staff" Relationship="Self.FK_Staff_Salaries_Staffs" FromRole="Staff_Salaries" ToRole="Staffs" />
+  </EntityType>
+  <EntityType Name="Staff">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Age" Type="Int32" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Staff_Salaries" Relationship="Self.FK_Staff_Salaries_Staffs" FromRole="Staffs" ToRole="Staff_Salaries" />
+    <NavigationProperty Name="StaffTasks" Relationship="Self.FK_StaffTasks_Staffs" FromRole="Staffs" ToRole="StaffTasks" />
+  </EntityType>
+  <EntityType Name="StaffTask">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Staff_Id" Type="Int32" Nullable="false" />
+    <Property Name="Task" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Staff" Relationship="Self.FK_StaffTasks_Staffs" FromRole="StaffTasks" ToRole="Staffs" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_In_Out_Notes_Members">
+    <End Role="Members" Type="Self.Member" Multiplicity="1" />
+    <End Role="In_Out_Notes" Type="Self.In_Out_Notes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Members">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="In_Out_Notes">
+        <PropertyRef Name="Member_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MealInfos_Members">
+    <End Role="Members" Type="Self.Member" Multiplicity="1" />
+    <End Role="MealInfos" Type="Self.MealInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Members">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MealInfos">
+        <PropertyRef Name="Member_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Member_Complains_Members">
+    <End Role="Members" Type="Self.Member" Multiplicity="1" />
+    <End Role="Member_Complains" Type="Self.Member_Complains" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Members">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Member_Complains">
+        <PropertyRef Name="Member_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Members_RoomDetails">
+    <End Role="RoomDetails" Type="Self.RoomDetail" Multiplicity="1" />
+    <End Role="Members" Type="Self.Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoomDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Members">
+        <PropertyRef Name="Room_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Request_Services_Members">
+    <End Role="Members" Type="Self.Member" Multiplicity="1" />
+    <End Role="Request_Services" Type="Self.Request_Services" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Members">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Request_Services">
+        <PropertyRef Name="Member_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Staff_Salaries_Staffs">
+    <End Role="Staffs" Type="Self.Staff" Multiplicity="1" />
+    <End Role="Staff_Salaries" Type="Self.Staff_Salaries" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staffs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Staff_Salaries">
+        <PropertyRef Name="Staff_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StaffTasks_Staffs">
+    <End Role="Staffs" Type="Self.Staff" Multiplicity="1" />
+    <End Role="StaffTasks" Type="Self.StaffTask" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staffs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StaffTasks">
+        <PropertyRef Name="Staff_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HMS_APIEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admins" EntityType="Self.Admin" />
+    <EntitySet Name="CalGros" EntityType="Self.CalGro" />
+    <EntitySet Name="HomeNotices" EntityType="Self.HomeNotice" />
+    <EntitySet Name="In_Out_Notes" EntityType="Self.In_Out_Notes" />
+    <EntitySet Name="MealInfos" EntityType="Self.MealInfo" />
+    <EntitySet Name="Member_Complains" EntityType="Self.Member_Complains" />
+    <EntitySet Name="Members" EntityType="Self.Member" />
+    <EntitySet Name="Request_Services" EntityType="Self.Request_Services" />
+    <EntitySet Name="RoomDetails" EntityType="Self.RoomDetail" />
+    <EntitySet Name="Staff_Salaries" EntityType="Self.Staff_Salaries" />
+    <EntitySet Name="Staffs" EntityType="Self.Staff" />
+    <EntitySet Name="StaffTasks" EntityType="Self.StaffTask" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <AssociationSet Name="FK_In_Out_Notes_Members" Association="Self.FK_In_Out_Notes_Members">
+      <End Role="Members" EntitySet="Members" />
+      <End Role="In_Out_Notes" EntitySet="In_Out_Notes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MealInfos_Members" Association="Self.FK_MealInfos_Members">
+      <End Role="Members" EntitySet="Members" />
+      <End Role="MealInfos" EntitySet="MealInfos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Member_Complains_Members" Association="Self.FK_Member_Complains_Members">
+      <End Role="Members" EntitySet="Members" />
+      <End Role="Member_Complains" EntitySet="Member_Complains" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Members_RoomDetails" Association="Self.FK_Members_RoomDetails">
+      <End Role="RoomDetails" EntitySet="RoomDetails" />
+      <End Role="Members" EntitySet="Members" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Request_Services_Members" Association="Self.FK_Request_Services_Members">
+      <End Role="Members" EntitySet="Members" />
+      <End Role="Request_Services" EntitySet="Request_Services" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Staff_Salaries_Staffs" Association="Self.FK_Staff_Salaries_Staffs">
+      <End Role="Staffs" EntitySet="Staffs" />
+      <End Role="Staff_Salaries" EntitySet="Staff_Salaries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StaffTasks_Staffs" Association="Self.FK_StaffTasks_Staffs">
+      <End Role="Staffs" EntitySet="Staffs" />
+      <End Role="StaffTasks" EntitySet="StaffTasks" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Library_ManagementEntities">
+    <EntitySetMapping Name="BookList_Table">
+      <EntityTypeMapping TypeName="Model.BookList_Table">
+        <MappingFragment StoreEntitySet="BookList_Table">
+          <ScalarProperty Name="BookId" ColumnName="BookId" />
+          <ScalarProperty Name="BookName" ColumnName="BookName" />
+          <ScalarProperty Name="AuthorName" ColumnName="AuthorName" />
+          <ScalarProperty Name="Edition" ColumnName="Edition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Borrowed_Book_Table">
+      <EntityTypeMapping TypeName="Model.Borrowed_Book_Table">
+        <MappingFragment StoreEntitySet="Borrowed_Book_Table">
+          <ScalarProperty Name="Borrowed_Book_Id" ColumnName="Borrowed_Book_Id" />
+          <ScalarProperty Name="Book_Name" ColumnName="Book_Name" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Edition" ColumnName="Edition" />
+          <ScalarProperty Name="Borrowed_By" ColumnName="Borrowed_By" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Librarian_table">
+      <EntityTypeMapping TypeName="Model.Librarian_table">
+        <MappingFragment StoreEntitySet="Librarian_table">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Dob" ColumnName="Dob" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="JoiningDate" ColumnName="JoiningDate" />
+          <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Occasion_Table">
+      <EntityTypeMapping TypeName="Model.Occasion_Table">
+        <MappingFragment StoreEntitySet="Occasion_Table">
+          <ScalarProperty Name="OC_Id" ColumnName="OC_Id" />
+          <ScalarProperty Name="OC_Name" ColumnName="OC_Name" />
+          <ScalarProperty Name="OC_Description" ColumnName="OC_Description" />
+          <ScalarProperty Name="OC_Date" ColumnName="OC_Date" />
+          <ScalarProperty Name="OC_Time" ColumnName="OC_Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Requested_Book_Table">
+      <EntityTypeMapping TypeName="Model.Requested_Book_Table">
+        <MappingFragment StoreEntitySet="Requested_Book_Table">
+          <ScalarProperty Name="Book_Id" ColumnName="Book_Id" />
+          <ScalarProperty Name="Book_Name" ColumnName="Book_Name" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Edition" ColumnName="Edition" />
+          <ScalarProperty Name="ReqBy" ColumnName="ReqBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Student_Table">
+      <EntityTypeMapping TypeName="Model.Student_Table">
+        <MappingFragment StoreEntitySet="Student_Table">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Dob" ColumnName="Dob" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
